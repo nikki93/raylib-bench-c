@@ -1,0 +1,3 @@
+emcc -s "BINARYEN_TRAP_MODE='clamp'" -c main.c -o main.o -O1 -s -Wall -std=c99 -D_DEFAULT_SOURCE -Wno-missing-braces -s USE_GLFW=3 -s ASSERTIONS=1 -s WASM=1 --profiling --preload-file resources --shell-file ../..\templates\web_shell\shell.html -I. -I../../release/include -I../../src -I../../src/external -I/usr/local/include -DPLATFORM_WEB
+emcc -s "BINARYEN_TRAP_MODE='clamp'" -o simple_game.html  main.o -O1 -s -Wall -std=c99 -D_DEFAULT_SOURCE -Wno-missing-braces -s USE_GLFW=3 -s ASSERTIONS=1 -s WASM=1 --profiling  --shell-file ~/Development/raylib/templates/web_shell/shell.html -I. -I../../release/include -I../../src -I../../src/external -I/usr/local/include -L. -L../../release/libs/html5 -L../../src  /Users/nikki/Development/raylib/src/libraylib.bc -DPLATFORM_WEB
+

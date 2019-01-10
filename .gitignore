@@ -1,0 +1,4 @@
+DerivedData-beta/
+rects-bench-c/*.o
+rects-bench-c/a.out
+rects-bench-c/simple_game.*
