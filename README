@@ -1,8 +1,10 @@
+compare with https://github.com/expo/ghost-tests/tree/master/bench1
+
 native Xcode desktop:
-	Open rects-bench-c.xcodeproj, run
+	open rects-bench-c.xcodeproj, run
 
 native non-Xcode desktop:
-	In rects-bench-c/, run 'sh native_build.sh'; run './a.out'
+	in rects-bench-c/, run 'sh native_build.sh'; run './a.out'
 
 WASM desktop:
-	In rects-bench-c/, run 'sh web_build.sh'; run 'python -m SimpleHTTPServer'; open 'http://localhost:8000/simple_game.html' in browser
+	in rects-bench-c/, run 'sh web_build.sh'; run 'python -m SimpleHTTPServer'; open 'http://localhost:8000/simple_game.html' in browser
